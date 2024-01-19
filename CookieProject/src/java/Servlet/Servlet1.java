@@ -21,7 +21,7 @@ public class Servlet1 extends HttpServlet {
       out.println("<body>");
       String name=request.getParameter("name");
       out.println("<h1> hello,"+name+"welcome to my website</h1>");
-      out.println("<h1><a href='servlet2'>Go to servlet</a></h1>");
+      out.println("<h1><a href='Servlet2'>Go to servlet</a></h1>");
       Cookie c= new Cookie("username",name);
       response.addCookie(c);
       out.println("</html>");
